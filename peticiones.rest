@@ -1,55 +1,37 @@
-GET http://localhost:3000/pruebas
-
-
-### 
-GET http://localhost:3000/products
-###
-PUT http://localhost:3000/products/edit
 
 ###
-POST http://localhost:3000/users/create
+POST http://localhost:3000/inmuebles/crear
 Content-Type: application/json
 
 {
-    "username": "mairi",
-    "password": "1234",
-    "age": 33,
-    "email": "mairi@mairi"
+    "piso": "2",
+    "letra": "L",
+    "extension": 33,
+    "numero_habitaciones": 5,
+    "alquilado": true,
+    "propietario": "Isabella",
+    "email_contacto": "isabella@isabella.com"
 
 }
 
-###
-GET http://localhost:3000/users/active
 
 ###
-DELETE http://localhost:3000/users/delete
-
-###
-GET http://localhost:3000/products/department/moda
-###
-GET http://localhost:3000/products/department/oficina
-
-###
-GET http://localhost:3000/products/department/cocina
-
-### 
-
-GET http://localhost:3000/users/23/comments/378
+DELETE http://localhost:3000/inmuebles/borrar
 
 ########
 ### API ####
 #########
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/inmuebles
 
 
 ###
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/inmuebles
 
 ###
-PUT http://localhost:3000/api/users/123
+PUT http://localhost:3000/api/inmuebles/123
 
 ###
-DELETE http://localhost:3000/api/users/1234
+DELETE http://localhost:3000/api/inmuebles/1234
 
 
 
