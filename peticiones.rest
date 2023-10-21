@@ -1,6 +1,9 @@
+########
+### API ####
+#########
 
 ###
-POST http://localhost:3000/inmuebles/crear
+POST http://localhost:3000/api/inmuebles
 Content-Type: application/json
 
 {
@@ -14,24 +17,26 @@ Content-Type: application/json
 
 }
 
+###
+GET http://localhost:3000/api/inmuebles/
 
 ###
-DELETE http://localhost:3000/inmuebles/borrar
-
-########
-### API ####
-#########
-GET http://localhost:3000/api/inmuebles
-
+GET http://localhost:3000/api/inmuebles/6534346a52a491d5c1a7df3d
 
 ###
-POST http://localhost:3000/api/inmuebles
+PUT http://localhost:3000/api/inmuebles/6534346a52a491d5c1a7df3d
+Content-Type: application/json
+
+{
+    "piso": "6",
+    "letra": "M",
+    "extension": 33,
+    "numero_habitaciones": 5,
+    "alquilado": true,
+    "propietario": "Isabella",
+    "email_contacto": "isabella@isabella.com"
+
+}
 
 ###
-PUT http://localhost:3000/api/inmuebles/123
-
-###
-DELETE http://localhost:3000/api/inmuebles/1234
-
-
-
+DELETE http://localhost:3000/api/inmuebles/6534346a52a491d5c1a7df3d

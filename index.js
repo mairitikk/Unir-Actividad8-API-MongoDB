@@ -1,11 +1,14 @@
 // creamos el servidor y lo ponemos a la escucha
 const http = require('http');
 
-const app = require('./src/app');
-
 //Cargar los datos del fichero de entorno
 // node --env-file=.env index.js
 require('dotenv').config();
+
+// Config Base de datos
+require('./src/config/db');
+
+const app = require('./src/app');
 
 //Crear el servidor
 // en ese crear tu aplicasion
